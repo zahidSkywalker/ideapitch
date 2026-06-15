@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-geist: var(--font-geist);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  background: #09090b;
+  color: #fafafa;
+  font-family: var(--font-geist), system-ui, sans-serif;
+}
+
+/* Animated gradient background for hero */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Slide-up animation */
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-up {
+  animation: slide-up 0.6s ease-out forwards;
+}
+
+.slide-up-delay-1 { animation-delay: 0.15s; opacity: 0; }
+.slide-up-delay-2 { animation-delay: 0.3s; opacity: 0; }
+.slide-up-delay-3 { animation-delay: 0.45s; opacity: 0; }
+.slide-up-delay-4 { animation-delay: 0.6s; opacity: 0; }
+
+/* Glow input */
+.glow-input:focus {
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.4), 0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+/* Feature card hover */
+.feature-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.15);
+}
+
+/* Deck section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(139,92,246,0.3), transparent);
+}
+
+/* Loading spinner */
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.spin-slow { animation: spin-slow 1.2s linear infinite; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
