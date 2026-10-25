@@ -22,12 +22,12 @@ function getAccentClasses(accent: string) {
   const map: Record<string, { text: string; bg: string; border: string; glow: string; bgSoft: string; borderSoft: string; ring: string }> = {
     violet:  { text: "text-violet-400",  bg: "bg-violet-500",  border: "border-violet-500/30",  glow: "shadow-violet-500/20",  bgSoft: "bg-violet-500/10",  borderSoft: "border-violet-500/15", ring: "ring-violet-500/20" },
     cyan:    { text: "text-cyan-400",    bg: "bg-cyan-500",    border: "border-cyan-500/30",    glow: "shadow-cyan-500/20",    bgSoft: "bg-cyan-500/10",    borderSoft: "border-cyan-500/15", ring: "ring-cyan-500/20" },
-    rose:    { text: "text-rose-400",    bg: "bg-rose-500",    border: "border-rose-500/30",    glow: "shadow-rose-500/20",    border: "border-rose-500/15", bgSoft: "bg-rose-500/10",     ring: "ring-rose-500/20" },
-    emerald: { text: "text-emerald-400", bg: "bg-emerald-500", border: "border-emerald-500/30", glow: "shadow-emerald-500/20", border: "border-emerald-500/15", bgSoft: "bg-emerald-500/10", ring: "ring-emerald-500/20" },
-    amber:   { text: "text-amber-400",   bg: "bg-amber-500",   border: "border-amber-500/30",   glow: "shadow-amber-500/20",   border: "border-amber-500/15", bgSoft: "bg-amber-500/10",  ring: "ring-amber-500/20" },
-    indigo:  { text: "text-indigo-400",  bg: "bg-indigo-500",  border: "border-indigo-500/30",  glow: "shadow-indigo-500/20",  border: "border-indigo-500/15", bgSoft: "bg-indigo-500/10", ring: "ring-indigo-500/20" },
-    pink:    { text: "text-pink-400",    bg: "bg-pink-500",    border: "border-pink-500/30",    glow: "shadow-pink-500/20",    border: "border-pink-500/15", bgSoft: "bg-pink-500/10",    ring: "ring-pink-500/20" },
-    sky:     { text: "text-sky-400",     bg: "bg-sky-500",     border: "border-sky-500/30",     glow: "shadow-sky-500/20",     border: "border-sky-500/15", bgSoft: "bg-sky-500/10",     ring: "ring-sky-500/20" },
+    rose:    { text: "text-rose-400",    bg: "bg-rose-500",    border: "border-rose-500/30",    glow: "shadow-rose-500/20",    bgSoft: "bg-rose-500/10",    borderSoft: "border-rose-500/15", ring: "ring-rose-500/20" },
+    emerald: { text: "text-emerald-400", bg: "bg-emerald-500", border: "border-emerald-500/30", glow: "shadow-emerald-500/20", bgSoft: "bg-emerald-500/10", borderSoft: "border-emerald-500/15", ring: "ring-emerald-500/20" },
+    amber:   { text: "text-amber-400",   bg: "bg-amber-500",   border: "border-amber-500/30",   glow: "shadow-amber-500/20",   bgSoft: "bg-amber-500/10",   borderSoft: "border-amber-500/15", ring: "ring-amber-500/20" },
+    indigo:  { text: "text-indigo-400",  bg: "bg-indigo-500",  border: "border-indigo-500/30",  glow: "shadow-indigo-500/20",  bgSoft: "bg-indigo-500/10",  borderSoft: "border-indigo-500/15", ring: "ring-indigo-500/20" },
+    pink:    { text: "text-pink-400",    bg: "bg-pink-500",    border: "border-pink-500/30",    glow: "shadow-pink-500/20",    bgSoft: "bg-pink-500/10",    borderSoft: "border-pink-500/15", ring: "ring-pink-500/20" },
+    sky:     { text: "text-sky-400",     bg: "bg-sky-500",     border: "border-sky-500/30",     glow: "shadow-sky-500/20",     bgSoft: "bg-sky-500/10",     borderSoft: "border-sky-500/15", ring: "ring-sky-500/20" },
   };
   return map[accent] || map.violet;
 }
